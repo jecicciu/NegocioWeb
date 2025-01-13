@@ -1,0 +1,54 @@
+/* Animaciones */
+.fadeInSection {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Efecto Hover para las tarjetas */
+.hoverCard:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin-top: 80px; /* Para evitar que la navbar cubra la parte superior del contenido */
+}
+
+/* Mejoras en la barra de navegación */
+.navbar {
+  background-color: #343a40 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Estilo para el formulario de contacto */
+form input, form textarea {
+  border-radius: 5px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #212529;
+}
+
+  
+  
