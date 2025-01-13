@@ -50,5 +50,24 @@ footer {
   background-color: #212529;
 }
 
+/* Animación de entrada */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Transición suave en botones */
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
   
   
