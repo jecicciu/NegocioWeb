@@ -40,38 +40,39 @@
     </section>
 
     <!-- Sección: Servicios -->
-    <section id="servicios" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Nuestros Servicios</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <div class="card-body">
-                            <h5 class="card-title">Creación de Contenido</h5>
-                            <p class="card-text">Blogs, correos, publicaciones para redes sociales y más.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <div class="card-body">
-                            <h5 class="card-title">Diseño Web</h5>
-                            <p class="card-text">Sitios web modernos y optimizados para SEO.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-lg">
-                        <div class="card-body">
-                            <h5 class="card-title">Automatización</h5>
-                            <p class="card-text">Scripts y herramientas personalizadas para tu negocio.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+<section id="servicios" class="py-5 bg-dark text-white">
+  <div class="container">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row text-center">
+          <div class="col-md-4">
+              <div class="card bg-light text-dark shadow-lg">
+                  <div class="card-body">
+                      <h5 class="card-title">Creación de Contenido</h5>
+                      <p class="card-text">Blogs, correos, publicaciones para redes sociales y más.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-light text-dark shadow-lg">
+                  <div class="card-body">
+                      <h5 class="card-title">Diseño Web</h5>
+                      <p class="card-text">Sitios web modernos y optimizados para SEO.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-light text-dark shadow-lg">
+                  <div class="card-body">
+                      <h5 class="card-title">Automatización</h5>
+                      <p class="card-text">Scripts y herramientas personalizadas para tu negocio.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
     <section id="inicio" class="text-center py-5 bg-light" style="margin-top: 80px; background-image: url('background.jpg'); background-attachment: fixed;">
       <div class="container">
           <h1 class="display-4">Bienvenidos a Nuestra Agencia</h1>
@@ -112,6 +113,48 @@
         </div>
     </section>
 
+    <section id="newsletter" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center mb-4">Suscríbete a Nuestro Newsletter</h2>
+          <form action="https://formspree.io/f/xannvopz" method="POST">
+              <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Suscribirse</button>
+          </form>
+      </div>
+  </section>
+  
+  <section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestro Blog</h2>
+        <p class="text-center">Próximamente publicaremos contenido relacionado con diseño web, marketing y más.</p>
+    </div>
+</section>
+
+
+  <!-- Integración de PayPal -->
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+<div id="paypal-button-container"></div>
+<script>
+  paypal.Buttons().render('#paypal-button-container');
+</script>
+
+<!-- Integración de Tawk.to -->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function() {
+      var script = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      script.async = true;
+      script.src = 'https://embed.tawk.to/YOUR_TAWK_ID/default';
+      script.charset = 'UTF-8';
+      script.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(script, s0);
+  })();
+</script>
+
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 Agencia Web. Todos los derechos reservados.</p>
@@ -119,5 +162,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'YOUR_TRACKING_ID');
+</script>
+
 </body>
 </html>
